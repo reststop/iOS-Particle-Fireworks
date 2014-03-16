@@ -77,9 +77,9 @@
 	rocket.emissionLatitude = 0;
 	rocket.lifetime = 1.6;
 	rocket.birthRate = 1;
-	rocket.velocity = 40;
+	rocket.velocity = -400;
 	rocket.velocityRange = 100;
-	rocket.yAcceleration = -250;
+	rocket.yAcceleration = 200;
 	rocket.emissionRange = M_PI / 4;
 	rocket.color = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:0.5].CGColor;
 	rocket.redRange = 0.5;
@@ -97,7 +97,7 @@
 	flare.velocity = 100;
 	flare.birthRate = 45;
 	flare.lifetime = 1.5;
-	flare.yAcceleration = -350;
+	flare.yAcceleration = 350;
 	flare.emissionRange = M_PI / 7;
 	flare.alphaSpeed = -0.7;
 	flare.scaleSpeed = -0.1;
@@ -113,7 +113,7 @@
 	firework.velocity = 130;
 	firework.lifetime = 2;
 	firework.alphaSpeed = -0.2;
-	firework.yAcceleration = -80;
+	firework.yAcceleration = 80;
 	firework.beginTime = 1.5;
 	firework.duration = 0.1;
 	firework.emissionRange = 2 * M_PI;
@@ -142,7 +142,7 @@
 	CAEmitterCell *spark = [CAEmitterCell emitterCell];
 	spark.contents = (id)image.CGImage;
 	spark.lifetime = 0.05;
-	spark.yAcceleration = -250;
+	spark.yAcceleration = 250;
 	spark.beginTime = 0.8;
 	spark.scale = 0.4;
 	spark.birthRate = 10;
